@@ -36,7 +36,8 @@ Clone the repo
 and apply 
 >$ terraform apply
 >
->
+
+
 all setting can be change form the variables.tf file 
 
 **Get the KUBECONFIG file**
