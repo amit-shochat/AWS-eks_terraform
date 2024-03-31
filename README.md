@@ -33,10 +33,9 @@ Clone the repo
 >$ terraform init  
 >$ terraform plan 
 
-and apply 
+**and apply**
 >$ terraform apply
 >
-
 
 all setting can be change form the variables.tf file 
 
