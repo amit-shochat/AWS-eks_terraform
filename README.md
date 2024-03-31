@@ -1,9 +1,9 @@
 # AWS EKS terraform
 Terraform resource code for EKS.
 includ: 
-	* 1. EKS 
-	* 2. 2 privet subnet && 2 public subnet 
-	* 3. Security Groups
+  - 1. EKS 
+  - 2. 2 privet subnet && 2 public subnet 
+  - 3. Security Groups
 	* 4. privet Node group with aws-autoscaler ( and option to public) 
 	* 5. Kubernetes base - Nginx web page application With public loadbalncer and HPA ///CPU base 
 
