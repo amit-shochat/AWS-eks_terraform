@@ -11,7 +11,7 @@ includ:
 
 component: 
   - AWS - cluster-autoscaler
-  - metrics-server - for resource metrices
+  - metrics-server - for resource metrice
   - Nginx Application with Public LB and pod autoscaling
 
 <pre>
@@ -22,7 +22,7 @@ component:
 └── variables.tf
 </pre>
 
-Please be sure that you have kubectl and awc-cli install.
+Please be sure that you have kubectl and aws-cli installed.
 
 ***Get started***
 Clone the repo 
@@ -59,7 +59,7 @@ Open new terminal and run
 On the first terminal.
 >$ kubectl -n application run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://nginx-public-lb:443; done"
 
-The POD run wget function to generator CPU load on the Nginx delpoyment and force the HPA create new pod and new NODE 
+The POD run wget function to generator CPU load on the Nginx deployment and force the HPA create new pod and new NODE 
 
 **Clean up**
 >$ kubectl delete ns application
