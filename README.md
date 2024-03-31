@@ -34,12 +34,14 @@ Clone the repo
 >$ terraform plan 
 
 and apply 
->$ terraform apply 
+>$ terraform apply
+>
+>
 all setting can be change form the variables.tf file 
 
 **Get the KUBECONFIG file**
 >$ aws eks --region us-east-1 update-kubeconfig --name test-test 
-> #need to get locaion of the file, like: /home/USER/.kube/config
+>need to get locaion of the file, like: /home/USER/.kube/config
 >
 >$ export KUBECONFIG=/home/USER/.kube/config
 
