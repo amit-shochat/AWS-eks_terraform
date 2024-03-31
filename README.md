@@ -50,4 +50,16 @@ need to get locaion of the file, like: /home/USER/.kube/config
 **Check**
 >$ kubectl get all -A
 
+For test the autoscaling
+> $ watch -n1 kubectl -n application get no,po,hpa
+>
+> 
+>$ kubectl -n application run -i --tty load-generator --rm --image=busybox --restart=Never -- /bin/sh -c "while sleep 0.01; do wget -q -O- http://nginx-public-lb:443; done"
+
+The POD run wget function to generator CPU load on the Nginx delpoyment and force the HPA create new pod and new NODE 
+
+**Clean up**
+>$ kubectl delete ns application
+>
+>$ terraform destroy --auto-approve
 
